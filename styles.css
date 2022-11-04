@@ -15,18 +15,27 @@ body{
     background-color: rgba(103, 167, 130, 0.411);
 }
 
+button {
+    border: none;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+    outline: none;
+  }
+
 header {
     width: 100%;
 }
 
 h1 {
     font-family: 'Roboto';
-    font-weight: 500;
+    font-weight: 700;
     color: #333;
 }
 
 header h1 {
-    font-size: 48px;
+    font-size: 56px;
     text-align: center;
     background-color:rgba(55, 216, 216, 0.833);
     margin: 0;
@@ -37,6 +46,16 @@ header h1 {
 main {
     padding: 40px 40px;
 
+}
+
+.player-message{
+    font-size: 30px;
+    font-family: 'Mochiy Pop One';
+    font-weight: 50;
+    color: rgb(46, 163, 52);
+    text-align: center;
+    margin: 0;
+    padding-bottom: 1.4vh;
 }
 
 .gameboard {
@@ -53,13 +72,29 @@ main {
     height: 150px;
     border: 1px solid #333;
     background-color: #9393dd;
+    font-family: 'Permanent Marker';
     font-size: 100px;
     text-align: center;
     cursor: pointer;
     user-select: none;
 }
 
+.center{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
 
+.reset-button {
+    padding: 10px 20px;
+    border: 3px solid  #333;
+    border-radius: 7px;
+    background-color:  rgba(55, 216, 216, 0.833);
+    color: #333;
+    font-size: 30px;
+    
+    
+  }
 
 
 
