@@ -37,7 +37,7 @@ h1 {
 header h1 {
     font-size: 56px;
     text-align: center;
-    background-color:rgba(55, 216, 216, 0.833);
+    background-color:rgba(12, 173, 173, 0.833);
     margin: 0;
     padding: 1.4vh;
 
@@ -52,7 +52,7 @@ main {
     font-size: 30px;
     font-family: 'Mochiy Pop One';
     font-weight: 50;
-    color: rgb(46, 163, 52);
+    color: rgb(30, 143, 35);
     text-align: center;
     margin: 0;
     padding-bottom: 1.4vh;
@@ -89,11 +89,11 @@ main {
     padding: 10px 20px;
     border: 3px solid  #333;
     border-radius: 7px;
-    background-color:  rgba(55, 216, 216, 0.833);
-    color: #333;
+    background-color:  rgba(12, 173, 173, 0.833);
+    color: rgb(20, 20, 20);
+    font-family: 'Roboto';
     font-size: 30px;
-    
-    
+    font-weight: bold;
   }
 
 
