@@ -67,7 +67,7 @@ const displayController = (() => {
         }
     }
     
-    return {updateGameboard,removeListener,setPlayerMessage,setGameMessage, };
+    return {updateGameboard,removeListener,setPlayerMessage,setGameMessage };
 })();
 
 const gameController = (() => {
@@ -75,8 +75,7 @@ const gameController = (() => {
     const playerO = Player('O');
     let round = 1;
     let isOver = false
-    //console.log(`${playerX.getShape()}`);
-    //console.log(`${playerO.getShape()}`);
+
     const playRound = (boxIndex) => {
         gameBoard.setField(boxIndex, getCurrentPlayerShape());
         if (checkForWinner(boxIndex)){
@@ -118,11 +117,15 @@ const gameController = (() => {
                     )
                 );
         };
+        const getEmptyIndexes = (board) => {
+            return board.filter(i => i !=== "O" && i !=== "X")
+        }
+
         const reset = () => {
             isOver = false;
             round = 1;
         }
-    return {playRound, getCurrentPlayerShape, getIsOver, reset}
+    return {playRound, getCurrentPlayerShape, getIsOver,getEmptyIndexes, reset}
 })();
 
 
