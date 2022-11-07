@@ -4,7 +4,7 @@ const Player = (shape) => {
 }
 
 const gameBoard = (() => {
-    const board = ['','','','','','','','',''];
+    const board = ['0','1','2','3','4','5','6','7','8'];
     
     const setField = (index, shape) => {
         if (index > board.length){return};
@@ -12,12 +12,12 @@ const gameBoard = (() => {
     };
     
     const getField = (index) => {
-        return board[index];
+       return board[index];
     }; 
 
     const reset = () => {
         for (let i = 0; i < board.length; i++){
-            board[i] = ''; 
+            board[i] = `${i}`; 
         }
     };
     return{setField, getField, reset};
@@ -60,7 +60,10 @@ const displayController = (() => {
     /*Adds Player's shape to the gameboard */
     const updateGameboard = () => {
         for (let i = 0; i < boxes.length ; i++) {
-            boxes[i].textContent = gameBoard.getField(i);
+            if(gameBoard.getField(i) === "X" || gameBoard.getField(i) === "O")
+                {boxes[i].textContent = gameBoard.getField(i);}
+            else
+                {boxes[i].textContent = '';}
         }
     }
     
