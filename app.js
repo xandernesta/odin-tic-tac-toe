@@ -14,6 +14,7 @@ const gameBoard = (() => {
     const getField = (index) => {
         return board[index];
     }; 
+
     const reset = () => {
         for (let i = 0; i < board.length; i++){
             board[i] = ''; 
@@ -63,7 +64,7 @@ const displayController = (() => {
         }
     }
     
-    return {  updateGameboard, removeListener,setPlayerMessage,setGameMessage, };
+    return {updateGameboard,removeListener,setPlayerMessage,setGameMessage, };
 })();
 
 const gameController = (() => {
@@ -118,7 +119,7 @@ const gameController = (() => {
             isOver = false;
             round = 1;
         }
-    return { playRound, getCurrentPlayerShape, getIsOver, reset}
+    return {playRound, getCurrentPlayerShape, getIsOver, reset}
 })();
 
 
